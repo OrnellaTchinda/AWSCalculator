@@ -14,22 +14,23 @@ var callAPI = (num1, num2) => {
         redirect: 'follow'
     };
     // make API call with parameters and use promises to get response
-    fetch("https://lguminsdxe.execute-api.us-east-1.amazonaws.com/dev/", requestOptions)
+    fetch("https://lguminsdxe.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
         .then(response => response.text())
         .then(result => alert(JSON.parse(result).body))
         .catch(error => console.log('error', error));
 }
 
-let getNum1 = document.getElementById('num1');
-let getNum2 = document.getElementById('num2');
+// let getNum1 = document.getElementById('num1');
+// let getNum2 = document.getElementById('num2');
 
-function add() {
-    callAPI(getNum1.value, getNum2.value)
-    // const num1 = getNum1.valueAsNumber;
-    // const num2 = getNum2.valueAsNumber;
-    // const result = num1 + num2;
-    // displayResult(result);
-}
+// function add() {
+//     callAPI(getNum1.value, getNum2.value)
+//     console.log(callAPI())
+//     // const num1 = getNum1.valueAsNumber;
+//     // const num2 = getNum2.valueAsNumber;
+//     // const result = num1 + num2;
+//     // displayResult(result);
+// }
 
 // function subtract() {
 //     const num1 = getNum1.valueAsNumber;

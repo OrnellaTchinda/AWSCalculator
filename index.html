@@ -19,7 +19,8 @@
         <input type="number" id="num1" placeholder="Enter a number">
         <input type="number" id="num2" placeholder="Enter another number">
         <br>
-        <button onclick="add()">Add</button>
+        <button type="button"
+            onclick="callAPI(document.getElementById('num1').value, document.getElementById('num2').value)">Add</button>
         <!-- <button onclick="subtract()">Subtract</button>
         <button onclick="multiply()">Multiply</button>
         <button onclick="divide()">Divide</button> -->
