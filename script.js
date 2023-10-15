@@ -24,7 +24,7 @@ let getNum1 = document.getElementById('num1');
 let getNum2 = document.getElementById('num2');
 
 function add() {
-    callAPI(getNum1.value, document.getNum2.value)
+    callAPI(getNum1.value, getNum2.value)
     // const num1 = getNum1.valueAsNumber;
     // const num2 = getNum2.valueAsNumber;
     // const result = num1 + num2;
