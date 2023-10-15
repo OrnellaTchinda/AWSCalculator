@@ -56,8 +56,8 @@ function add() {
 //     }
 // }
 
-// function displayResult(result) {
-//     const resultElement = document.getElementById('result');
-//     resultElement.textContent = 'Result: ' + result;
-// }
+function displayResult(result) {
+    const resultElement = document.getElementById('result');
+    resultElement.textContent = 'Result: ' + result;
+}
 
